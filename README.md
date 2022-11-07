@@ -419,19 +419,19 @@
 👨 [**IT`S ME**](https://github.com/jayarnim)
 
     - Exploratory Data Analysis
-    - LinearRegression
     - README
 
 👩 [**김효정**](https://github.com/410am)
 
-    - Exploratory Data Analysis
-    - RandomForestRegressor
-    - GradientBoostingRegressor
+    - LinearRegression
+    - SGDRegresion
+    - RandomForestRegression
+    - GradientBoostingRegression
 
 👨 [**인찬휘**](https://github.com/wassaa-1)
 
     - Exploratory Data Analysis
-    - Regression
+    - Predict
     - Presentation
 
 <br>
