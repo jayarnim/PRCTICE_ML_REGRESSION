@@ -240,11 +240,11 @@
 
 - `season` : 통상적인 기준과는 다르게 분류함
 
-- `datetime`의 day : train.csv와 test.csv 간 고르게 분포되어 있지 않음
+- `datetime`의 day : `train.csv`와 `test.csv` 간 고르게 분포되어 있지 않음
 
-- `casual` : test.csv 및 smapleSubmission.csv에는 존재하지 않음
+- `casual` : `test.csv` 및 `smapleSubmission.csv`에는 존재하지 않음
 
-- `registered` : test.csv 및 smapleSubmission.csv에는 존재하지 않음
+- `registered` : `test.csv` 및 `smapleSubmission.csv`에는 존재하지 않음
 
 <br>
 
