@@ -18,16 +18,16 @@
 	- 학습할 알고리즘
 		
 			- 선형 회귀(Linear Regressor)
-			- 확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regression)
+			- 확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regressor)
 			- 랜덤 포레스트 회귀(Random Forest Regressor)
 			- 그라디언트 부스팅 회귀(Gradient Boosting Machine Regressor; GBM Regressor)
 
 ### 👉 데이터 셋 소개
 - 2011, 2012년 자전거 공유 시스템 이용자 수와 해당일 기후, 요일 등에 관한 정보를 담은 데이터 셋
 	- 본 데이터 셋은 2015년 캐글에서 개최한 공모전에서 제공되었던 데이터 셋임
-	- train.csv 데이터 셋을 통해 자전거 대여량 예측 모델 설계
-	- test.csv 데이터 셋을 통해 매달 20~30일 자전거 대여량 예측
-	- sampleSubmission.csv 데이터 셋에 예측 결과 기입
+	- `train.csv` 데이터 셋을 통해 자전거 대여량 예측 모델 설계
+	- `test.csv` 데이터 셋을 통해 매달 20~30일 자전거 대여량 예측
+	- `sampleSubmission.csv` 데이터 셋에 예측 결과 기입
 
 - `train.csv` : 매달 1~19일까지의 정보
 
@@ -228,11 +228,13 @@
 	- 두 독립변수 간 상관관계가 높다면 각 독립변수가 종송변수에 대하여 설명하는 정보에 유의미한 차이가 있다고 볼 수 없음
 	- 따라서 두 변수 중 다중공선성이 더 높은 변수를 삭제하기로 결정함
 
-- 다중공선성(Multicollinearity)
-	- 다중공선성 : 임의의 독립변수가 종속변수에 대하여 설명하는 정보가 다른 독립변수들이 설명하는 정보에 대하여 가지는 의존성
+- 다중공선성
+	- 다중공선성(Multicollinearity)
+		- 임의의 독립변수가 종속변수에 대하여 설명하는 정보가 다른 독립변수들이 설명하는 정보에 대하여 가지는 의존성
 		- 임의의 독립변수가 다중공선성이 높다면, 해당 독립변수가 제공하는 정보를 다른 독립변수들이 제공하는 정보만으로 유추할 수 있음
 	
-	- 분산팽창계수(Variance Inflation Factor; VIF) : 다중공선성을 측정한 수치
+	- 분산팽창계수(Variance Inflation Factor; VIF)
+		- 다중공선성을 측정한 수치
 		- 분산팽창계수가 높을수록 다중공선성이 높다고 판단함
 		- 통상적으로는 10을 초과하는 경우 다중공선성이 높은 편이라고 여김
 
