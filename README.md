@@ -29,15 +29,15 @@
 	- test.csv 데이터 셋을 통해 매달 20~30일 자전거 대여량 예측
 	- sampleSubmission.csv 데이터 셋에 예측 결과 기입
 
-- train.csv : 매달 1~19일까지의 정보
+- `train.csv` : 매달 1~19일까지의 정보
 
 	<img width="1003" alt="스크린샷 2022-10-30 오후 7 22 22" src="https://user-images.githubusercontent.com/116495744/198873751-a27f2575-8753-45aa-a3ba-aedd51dfd243.png">
     
-- test.csv : 자전거 대여량을 제외한 매달 20~30일까지의 정보
+- `test.csv` : 자전거 대여량을 제외한 매달 20~30일까지의 정보
 
 	<img width="804" alt="image" src="https://user-images.githubusercontent.com/116495744/198872846-c11717be-754f-4c1b-9bea-14a5e9daeb28.png">
       
-- sampleSubmission.csv : 매달 20~30일 자전거 대여량 예측값을 기입할 데이터프레임
+- `sampleSubmission.csv` : 매달 20~30일 자전거 대여량 예측값을 기입할 데이터프레임
 
 ---
 
