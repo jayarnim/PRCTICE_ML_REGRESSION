@@ -89,6 +89,10 @@
 		- 도함수의 결과값은 좌표상으로는 원함수의 경사(Gradient)를 나타냄
 		- 따라서 확률적 경사하강법은 원함수의 경사가 수평이 되는 지점을 찾는 일이라고 볼 수 있음
 
+- 매개변수
+
+			- learning_rate(default = 0.1) : 학습률
+
 <br>
 
 ### 👉 랜덤 포레스트 회귀(Random Forest Regression)
