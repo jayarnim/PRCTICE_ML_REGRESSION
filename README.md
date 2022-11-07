@@ -21,6 +21,7 @@
 			- 확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regressor)
 			- 랜덤 포레스트 회귀(Random Forest Regressor)
 			- 그라디언트 부스팅 회귀(Gradient Boosting Machine Regressor; GBM Regressor)
+<br>
 
 ### 👉 데이터 셋 소개
 - 2011, 2012년 자전거 공유 시스템 이용자 수와 해당일 기후, 요일 등에 관한 정보를 담은 데이터 셋
@@ -60,7 +61,9 @@
 			- feature_nmaes_in_ : 독립변수명
 			- coef_ : 각 독립변수의 가중치
 			- intercept_ : 편향성
-			
+
+<br>
+
 ### 👉 확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regression)
 
 		from sklearn.linear_model import SGDRegressor
@@ -72,6 +75,8 @@
 	- 최적화된 손실함수에 근거한 회귀식을 도출하는 방법
 	- 손실함수(Loss Function) : 편차를 종속변수, 가중치를 독립변수로 가지는 함수
 	- 최적화(Optimizing) : 손실함수의 결과값을 최소화하는 가중치를 찾는 일
+
+<br>
 
 ### 👉 랜덤 포레스트 회귀(Random Forest Regression)
 
@@ -92,6 +97,8 @@
 			- n_features_ : 독립변수의 수
 			- feature_names_in_ : 독립변수명
 			- feature_importances_ : 각 독립변수의 가중치
+
+<br>
 
 ### 👉 그라디언트 부스팅 회귀(Gradient Boosting Machine Regression; GBM Regression)
 
@@ -119,6 +126,8 @@
 			- n_features_ : 독립변수의 수
 			- feature_name_in_ : 독립변수명
 			- feature_importances_ : 각 독립변수의 가중치
+
+<br>
 
 ### 👉 성능평가지표
 
@@ -183,6 +192,8 @@
   
   - `Windspeed` : 풍속
 
+<br>
+
 ### 👉 Target Column
 - `Count` : 총 자전거 대여량
     
@@ -204,6 +215,8 @@
 - `casual` : test.csv 및 smapleSubmission.csv에는 존재하지 않음
 
 - `registered` : test.csv 및 smapleSubmission.csv에는 존재하지 않음
+
+<br>
 
 ### 👉 칼럼 재정의하기
 - `datetime` : 년/월/일/시/요일로 파싱함
@@ -228,6 +241,8 @@
       - 겨울(4) : 12, 1, 2월
 
 - `day`, `casual`, `registered` : 삭제
+
+<br>
 
 ### 👉 독립변수 간 다중공선성 줄이기
 - 히트맵을 통한 상관계수 확인
@@ -260,6 +275,8 @@
 				실질변수 : temp, windspeed
 				명목변수 : weather, month, hour, weekday, holiday, workingday
 
+<br>
+
 ### 👉 실질변수 전처리
 - boxplot을 통한 실질변수 분포 탐색
 
@@ -291,6 +308,8 @@
 	
 	- 단, `temp`의 경우 표준정규분포와 유사한 분포를 보이고 있으므로 스케일링하지 않음
 
+<br>
+
 ### 👉 명목변수 전처리
 - one-hot encoding을 통해 다음과 같이 이진분류 칼럼으로 파싱함
 
@@ -302,6 +321,8 @@
       - workingday : workingday_0, workingday_1
       - weather : weather_1, weather_2, weather_3, weather_4
 
+<br>
+
 ### 👉 Pipeline 만들기
 
 ---
@@ -310,9 +331,15 @@
 
 ### 👉 모델 설계
 
+<br>
+
 ### 👉 모델 선정
 
-### 👉 test.csv 예측
+<br>
+
+### 👉 `test.csv` 예측
+
+<br>
 
 ### 👉 예측 결과 분석
 
