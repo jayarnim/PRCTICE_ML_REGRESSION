@@ -48,9 +48,11 @@
 		from sklearn.linear_model import LinearRegression
 		li_reg = LinearRegression()
 
-- 최소제곱법을 통해 회귀선을 규명하는 알고리즘
+- 최소제곱법을 통해 회귀식을 도출하는 알고리즘
 
-	- 최소제곱법(Ordinary Least Squares; OLS) : 편차 제곱의 합을 최소화하는 회귀선을 도출하는 방법
+	- 최소제곱법(Ordinary Least Squares; OLS)
+	- 편차 제곱의 합을 최소화하는 회귀식을 도출하는 방법
+	- 편차 : 실제값과 예측값의 차이
 
 - 다음의 속성을 통해 훈련된 모델의 정보를 확인할 수 있음
 
@@ -63,6 +65,13 @@
 
 		from sklearn.linear_model import SGDRegressor
 		sgd_reg = SGDRegressor(learning_rate = 0.1)
+
+- 경사하강법을 통해 회귀식을 도출하는 알고리즘
+
+	- 확률적 경사하강법(Stochastic Gradient Descent; SGD)
+	- 최적화된 손실함수에 근거한 회귀식을 도출하는 방법
+	- 손실함수(Loss Function) : 편차를 종속변수, 가중치를 독립변수로 가지는 함수
+	- 최적화(Optimizing) : 손실함수의 결과값을 최소화하는 가중치를 찾는 일
 
 ### 👉 랜덤 포레스트 회귀(Random Forest Regression)
 
