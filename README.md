@@ -40,6 +40,8 @@
       
 - `sampleSubmission.csv` : 매달 20~30일 자전거 대여량 예측값을 기입할 데이터프레임
 
+<br>
+
 ---
 
 ## 🔎 알고리즘 소개
@@ -157,6 +159,8 @@
 	- 오차(실제 값과 예측 값의 차이)의 절대값의 평균
 	- 평균제곱편차에서 오차를 제곱하는 이유는 값의 방향성(음/양)이 아니라, 크기가 중요하기 때문임
 	- 따라서 오차를 제곱한 값 대신 오차의 절대값을 활용하여 오차의 크기가 과장될 여지를 없앰
+
+<br>
 
 ---
 
@@ -334,6 +338,8 @@
 
 ### 👉 Pipeline 만들기
 
+<br>
+
 ---
 
 ## 🚀 MODEL DESIGN
@@ -351,6 +357,8 @@
 <br>
 
 ### 👉 예측 결과 분석
+
+<br>
 
 ---
 
@@ -394,6 +402,8 @@
 
 > 짧은 시간 안에 다양한 시도를 한 점이 놀랍습니다. 뿐만 아니라 전처리 과정을 이해하기 쉽게 설명한 점이나 성능지표에 관한 데이터프레임을 기획한 점 등에서 정리정돈이 잘 되었음을 느낄 수 있었습니다.
 
+<br>
+
 ---
 
 ## 👭 WORKMATE
@@ -416,6 +426,8 @@
     - Regression
     - Presentation
 
+<br>
+
 ---
 
 ## 🛠 SKILL USED
@@ -433,6 +445,8 @@
 <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white"/> &nbsp;
 <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/> &nbsp;
 <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+
+<br>
 
 ---
 
