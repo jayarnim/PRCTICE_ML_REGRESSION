@@ -375,6 +375,7 @@
 
 ### 👉 예측 결과 분석
 
+![다운로드](https://user-images.githubusercontent.com/116495744/200706287-a05d51e0-90e9-4779-bf9b-0e4783a3ecb8.png)
 ![7](https://user-images.githubusercontent.com/116495744/200705859-68d6e437-c27b-408e-8066-ca986611d0f4.png)
 ![6](https://user-images.githubusercontent.com/116495744/200705864-930cc01f-954e-4059-846e-f3dd20c7a59d.png)
 ![5](https://user-images.githubusercontent.com/116495744/200705866-bb5d814c-0690-4e09-8c38-7e0f1e4f5f1d.png)
