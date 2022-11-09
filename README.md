@@ -375,7 +375,13 @@
 
 ### 👉 예측 결과 분석
 
-<br>
+![7](https://user-images.githubusercontent.com/116495744/200705859-68d6e437-c27b-408e-8066-ca986611d0f4.png)
+![6](https://user-images.githubusercontent.com/116495744/200705864-930cc01f-954e-4059-846e-f3dd20c7a59d.png)
+![5](https://user-images.githubusercontent.com/116495744/200705866-bb5d814c-0690-4e09-8c38-7e0f1e4f5f1d.png)
+![4](https://user-images.githubusercontent.com/116495744/200705868-338b132e-ce33-4641-9001-3b2be051d289.png)
+![3](https://user-images.githubusercontent.com/116495744/200705873-a984292f-f90e-482d-9646-032c36a4ee3f.png)
+![2](https://user-images.githubusercontent.com/116495744/200705874-619c4876-c4a6-492c-9693-d89cd808887d.png)
+
 
 ---
 
