@@ -334,16 +334,17 @@
 <br>
 
 ### 👉 명목변수 전처리
-- Label Encoding
+- 이미 모든 명목변수가 Label Encoding되어 있음
+
 - One-Hot Encoding을 통해 다음과 같이 이진분류 칼럼으로 파싱함
 
-      - season : season_1, season_2, season_3, season_4
-      - month : month_1, month_2, month_3, ..., month_12
-      - hour : hour_0, hour_1, hour_2, ..., hour_23
-      - weekday : weekday_0, weekday_1, weekday_2, ..., weekday_6
-      - holiday : holiday_0, holiday_1
-      - workingday : workingday_0, workingday_1
-      - weather : weather_1, weather_2, weather_3, weather_4
+		- season : season_0, season_1, season_2, season_3
+		- month : month_1, month_2, month_3, ..., month_12
+		- hour : hour_0, hour_1, hour_2, ..., hour_23
+		- weekday : weekday_0, weekday_1, weekday_2, ..., weekday_6
+		- holiday : holiday_0, holiday_1
+		- workingday : workingday_0, workingday_1
+		- weather : weather_1, weather_2, weather_3, weather_4
 
 <br>
 
