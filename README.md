@@ -253,16 +253,6 @@
 
         year, month, day, hour, weekday
 	
-- `weekday` : Label encoding
-
-        - 0_Mon : 0
-        - 1_Tues : 1
-        - 2_Wednes : 2
-        - 3_Thurs : 3
-        - 4_Fri : 4
-        - 5_Satur : 5
-        - 6_Sun : 6
-
 - `season` : 재분류
 
       - 봄(1) : 3, 4, 5월
