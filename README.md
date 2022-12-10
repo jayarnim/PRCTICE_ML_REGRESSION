@@ -1,16 +1,17 @@
 # 자전거 대여 수요 예측하기
 
 - 실습 기간 : 2022. 10. 06.
-- 제출일 : 2022. 10. 07.
-- 발표일 : 2022. 10. 07.
 
-<br>
+- 제출일 : 2022. 10. 07.
+
+- 발표일 : 2022. 10. 07.
 
 ---
 
 ## 💁‍♂️ 실습 소개
 
-### 👉 실습 목적
+<details><summary><h3>👉 실습 목적</h3></summary>
+
 - 지도학습 중 회귀분석 알고리즘 복습
 	- 회귀분석(Regression Analysis)
 		- 관찰된 연속형 변수들에 대하여 두 변수 사이의 상관관계를 규명함
@@ -23,9 +24,10 @@
 			- 확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regressor)
 			- 랜덤 포레스트 회귀(Random Forest Regressor)
 			- 그라디언트 부스팅 회귀(Gradient Boosting Machine Regressor; GBM Regressor)
-<br>
+</details>
 
-### 👉 데이터 셋 소개
+<details><summary><h3>👉 데이터 셋 소개</h3></summary>
+
 - 2011, 2012년 자전거 공유 시스템 이용자 수와 해당일 기후, 요일 등에 관한 정보를 담은 데이터 셋
 	- 본 데이터 셋은 2015년 캐글에서 개최한 공모전에서 제공되었던 데이터 셋임
 	- `train.csv` 데이터 셋을 통해 자전거 대여량 예측 모델 설계
@@ -41,14 +43,13 @@
 	<img width="804" alt="image" src="https://user-images.githubusercontent.com/116495744/198872846-c11717be-754f-4c1b-9bea-14a5e9daeb28.png">
       
 - `sampleSubmission.csv` : 매달 20~30일 자전거 대여량 예측값을 기입할 데이터프레임
-
-<br>
+</details>
 
 ---
 
 ## 🔎 알고리즘 소개
 
-### 👉 선형 회귀(Linear Regression)
+<details><summary><h3>👉 선형 회귀(Linear Regression)</h3></summary>
 
 		from sklearn.linear_model import LinearRegression
 		li_reg = LinearRegression()
@@ -69,10 +70,9 @@
 			- feature_nmaes_in_ : 독립변수명
 			- coef_ : 각 독립변수의 가중치
 			- intercept_ : 편향성
+</details>
 
-<br>
-
-### 👉 확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regression)
+<details><summary><h3>👉 확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regression)</h3></summary>
 
 		from sklearn.linear_model import SGDRegressor
 		sgd_reg = SGDRegressor(learning_rate = 0.1)
@@ -104,10 +104,9 @@
 			- feature_nmaes_in_ : 독립변수명
 			- coef_ : 각 독립변수의 가중치
 			- intercept_ : 편향성
+</details>
 
-<br>
-
-### 👉 랜덤 포레스트 회귀(Random Forest Regression)
+<details><summary><h3>👉 랜덤 포레스트 회귀(Random Forest Regression)</h3></summary>
 
 		from sklearn.ensemble import RandomForestRegressor
 		rf_reg = RandomForestRegressor(n_estimators = 100)
@@ -126,10 +125,9 @@
 			- n_features_ : 독립변수의 수
 			- feature_names_in_ : 독립변수명
 			- feature_importances_ : 각 독립변수의 가중치
+</details>
 
-<br>
-
-### 👉 그라디언트 부스팅 회귀(Gradient Boosting Machine Regression; GBM Regression)
+<details><summary><h3>👉 그라디언트 부스팅 회귀(Gradient Boosting Machine Regression; GBM Regression)</h3></summary>
 
 		from sklearn.ensemble import GradientBoostingRegressor
 		gbm_reg = GradientBoostingRegressor(n_estimators = 100, learning_rate = 0.1)
@@ -154,10 +152,9 @@
 			- n_features_ : 독립변수의 수
 			- feature_name_in_ : 독립변수명
 			- feature_importances_ : 각 독립변수의 가중치
+</details>
 
-<br>
-
-### 👉 성능평가지표
+<details><summary><h3>👉 성능평가지표</h3></summary>
 
 - 결정계수(coefficient of determination; r2-score)
 	- 실제 값의 분산 대비 예측 값의 분산 비율
@@ -176,14 +173,14 @@
 	- 오차(실제 값과 예측 값의 차이)의 절대값의 평균
 	- 평균제곱편차에서 오차를 제곱하는 이유는 값의 방향성(음/양)이 아니라, 크기가 중요하기 때문임
 	- 따라서 오차를 제곱한 값 대신 오차의 절대값을 활용하여 오차의 크기가 과장될 여지를 없앰
-
-<br>
+</details>
 
 ---
 
 ## 📄 META-DATA
 
-### 👉 Feature Columns
+<details><summary><h3>👉 Feature Columns</h3></summary>
+
 - 명목변수
   - `Datetime` : 이용 시각      
 
@@ -221,21 +218,23 @@
   - `Humidity` : 습도
   
   - `Windspeed` : 풍속
+</details>
 
-<br>
+<details><summary><h3>👉 Target Column</h3></summary>
 
-### 👉 Target Column
 - `Count` : 총 자전거 대여량
     
       - `Count` = `Casual` + `Registered`
       - `Casual` : 비회원 자전거 대여량
       - `Registered` : 회원 자전거 대여량
+</details>
 
 ---
 
 ## ✨ PRE-PROCESSING
 
-### 👉 데이터 셋 탐색하기
+<details><summary><h3>👉 데이터 셋 탐색하기</h3></summary>
+
 - `datetime` : 자료형이 object임
 
 - `season` : 통상적인 기준과는 다르게 분류함
@@ -245,10 +244,10 @@
 - `casual` : `test.csv` 및 `smapleSubmission.csv`에는 존재하지 않음
 
 - `registered` : `test.csv` 및 `smapleSubmission.csv`에는 존재하지 않음
+</details>
 
-<br>
+<details><summary><h3>👉 칼럼 재정의하기</h3></summary>
 
-### 👉 칼럼 재정의하기
 - `datetime` : 년/월/일/시/요일로 파싱함
 
         - year : 2011, 2012
@@ -265,10 +264,10 @@
       - 겨울(3) : 12, 1, 2월
 
 - `day`, `casual`, `registered` : 삭제
+</details>
 
-<br>
+<details><summary><h3>👉 독립변수 간 다중공선성 줄이기</h3></summary>
 
-### 👉 독립변수 간 다중공선성 줄이기
 - 히트맵을 통한 상관계수 확인
 
 	![상관계수](https://user-images.githubusercontent.com/116495744/199893643-db3680a5-e38e-4fc3-ada7-9f9ee4ccb269.png)
@@ -298,10 +297,10 @@
 
 				실질변수 : temp, windspeed
 				명목변수 : weather, month, hour, weekday, holiday, workingday
+</details>
 
-<br>
+<details><summary><h3>👉 실질변수 전처리</h3></summary>
 
-### 👉 실질변수 전처리
 - boxplot을 통한 실질변수 분포 탐색
 
 	![이상치](https://user-images.githubusercontent.com/116495744/199793429-6159de93-8a4e-4b2d-8ea5-ea6e3563c68c.png)	
@@ -330,10 +329,10 @@
 - 실질변수 간 범위의 상대적 크기가 미치는 영향력을 최소화하기 위하여 정규화함
 	
 		- 정규화(minimax scaling) : 값의 크기를 기준으로 최솟값을 0, 최댓값을 1인 분포로 축소하는 작업
+</details>
 
-<br>
+<details><summary><h3>👉 명목변수 전처리</h3></summary>
 
-### 👉 명목변수 전처리
 - 이미 모든 명목변수가 Label Encoding되어 있음
 
 - One-Hot Encoding을 통해 다음과 같이 이진분류 칼럼으로 파싱함
@@ -345,30 +344,29 @@
 		- holiday : holiday_0, holiday_1
 		- workingday : workingday_0, workingday_1
 		- weather : weather_1, weather_2, weather_3, weather_4
+</details>
 
-<br>
+<details><summary><h3>👉 Pipeline 만들기</h3></summary>
 
-### 👉 Pipeline 만들기
-
-<br>
+</details>
 
 ---
 
 ## 🚀 MODEL DESIGN
 
-### 👉 모델 설계
+<details><summary><h3>👉 모델 설계</h3></summary>
 
-<br>
+</details>
 
-### 👉 모델 선정
+<details><summary><h3>👉 모델 선정</h3></summary>
 
-<br>
+</details>
 
-### 👉 `test.csv` 예측
+<details><summary><h3>👉 test.csv 예측</h3></summary>
 
-<br>
+</details>
 
-### 👉 예측 결과 분석
+<details><summary><h3>👉 예측 결과 분석</h3></summary>
 
 ![다운로드](https://user-images.githubusercontent.com/116495744/200706287-a05d51e0-90e9-4779-bf9b-0e4783a3ecb8.png)
 ![7](https://user-images.githubusercontent.com/116495744/200705859-68d6e437-c27b-408e-8066-ca986611d0f4.png)
@@ -377,19 +375,18 @@
 ![4](https://user-images.githubusercontent.com/116495744/200705868-338b132e-ce33-4641-9001-3b2be051d289.png)
 ![3](https://user-images.githubusercontent.com/116495744/200705873-a984292f-f90e-482d-9646-032c36a4ee3f.png)
 ![2](https://user-images.githubusercontent.com/116495744/200705874-619c4876-c4a6-492c-9693-d89cd808887d.png)
-
+</details>
 
 ---
 
 ## :lips: COMMENT
 
-### 👉 Teacher`s
+<details><summary><h3>👉 Teacher`s</h3></summary>
 
 > **지금까지 배운 내용들을 총망라했다고 생각합니다. 짧은 시간 안에 다양한 방법으로 데이터를 분석하고, 적합한 모델을 찾기 위해 여러 알고리즘을 적용한 점에서 팀원들 간 협업도와 각각의 몰입도를 느낄 수 있었습니다. 또한 목차를 논리정연하게 정리한 점, 코드를 이해 가능하도록 기술한 점, scoresDF라는 데이터프레임을 생성하여 각 모델의 성능 지표를 한번에 비교할 수 있도록 기획한 점이 인상 깊었습니다.**
+</details>
 
-<br>
-
-### 👉 Students`
+<details><summary><h3>👉 Students`</h3></summary>
 
 > 데이터 처리 과정부터 머신러닝 모델 설계 및 예측 과정까지 일목요연하게 기술한 점, 짧은 시간 안에 여러 방법을 시도한 점,  모델 선정 과정에서 각각의 성능 지표를 한번에 확인 가능하도록 기획한 점이 인상 갚었습니다.
 
@@ -420,8 +417,7 @@
 <br>
 
 > 짧은 시간 안에 다양한 시도를 한 점이 놀랍습니다. 뿐만 아니라 전처리 과정을 이해하기 쉽게 설명한 점이나 성능지표에 관한 데이터프레임을 기획한 점 등에서 정리정돈이 잘 되었음을 느낄 수 있었습니다.
-
-<br>
+</details>
 
 ---
 
