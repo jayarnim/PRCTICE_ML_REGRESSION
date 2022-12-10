@@ -10,7 +10,7 @@
 
 ## 💁‍♂️ 실습 소개
 
-<details><summary><h3>👉 실습 목적</h3></summary>
+<details><summary><h3>실습 목적</h3></summary>
 
 - 지도학습 중 회귀분석 알고리즘 복습
 	- 회귀분석(Regression Analysis)
@@ -26,7 +26,7 @@
 			- 그라디언트 부스팅 회귀(Gradient Boosting Machine Regressor; GBM Regressor)
 </details>
 
-<details><summary><h3>👉 데이터 셋 소개</h3></summary>
+<details><summary><h3>데이터 셋 소개</h3></summary>
 
 - 2011, 2012년 자전거 공유 시스템 이용자 수와 해당일 기후, 요일 등에 관한 정보를 담은 데이터 셋
 	- 본 데이터 셋은 2015년 캐글에서 개최한 공모전에서 제공되었던 데이터 셋임
@@ -49,7 +49,7 @@
 
 ## 🔎 알고리즘 소개
 
-<details><summary><h3>👉 선형 회귀(Linear Regression)</h3></summary>
+<details><summary><h3>선형 회귀(Linear Regression)</h3></summary>
 
 		from sklearn.linear_model import LinearRegression
 		li_reg = LinearRegression()
@@ -72,7 +72,7 @@
 			- intercept_ : 편향성
 </details>
 
-<details><summary><h3>👉 확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regression)</h3></summary>
+<details><summary><h3>확률적 경사 하강 회귀(Stochastic Gradient Descent Regression; SGD Regression)</h3></summary>
 
 		from sklearn.linear_model import SGDRegressor
 		sgd_reg = SGDRegressor(learning_rate = 0.1)
@@ -106,7 +106,7 @@
 			- intercept_ : 편향성
 </details>
 
-<details><summary><h3>👉 랜덤 포레스트 회귀(Random Forest Regression)</h3></summary>
+<details><summary><h3>랜덤 포레스트 회귀(Random Forest Regression)</h3></summary>
 
 		from sklearn.ensemble import RandomForestRegressor
 		rf_reg = RandomForestRegressor(n_estimators = 100)
@@ -127,7 +127,7 @@
 			- feature_importances_ : 각 독립변수의 가중치
 </details>
 
-<details><summary><h3>👉 그라디언트 부스팅 회귀(Gradient Boosting Machine Regression; GBM Regression)</h3></summary>
+<details><summary><h3>그라디언트 부스팅 회귀(Gradient Boosting Machine Regression; GBM Regression)</h3></summary>
 
 		from sklearn.ensemble import GradientBoostingRegressor
 		gbm_reg = GradientBoostingRegressor(n_estimators = 100, learning_rate = 0.1)
@@ -154,7 +154,7 @@
 			- feature_importances_ : 각 독립변수의 가중치
 </details>
 
-<details><summary><h3>👉 성능평가지표</h3></summary>
+<details><summary><h3>성능평가지표</h3></summary>
 
 - 결정계수(coefficient of determination; r2-score)
 	- 실제 값의 분산 대비 예측 값의 분산 비율
@@ -179,7 +179,7 @@
 
 ## 📄 META-DATA
 
-<details><summary><h3>👉 Feature Columns</h3></summary>
+<details><summary><h3>Feature Columns</h3></summary>
 
 - 명목변수
   - `Datetime` : 이용 시각      
@@ -220,7 +220,7 @@
   - `Windspeed` : 풍속
 </details>
 
-<details><summary><h3>👉 Target Column</h3></summary>
+<details><summary><h3>Target Column</h3></summary>
 
 - `Count` : 총 자전거 대여량
     
@@ -233,7 +233,7 @@
 
 ## ✨ PRE-PROCESSING
 
-<details><summary><h3>👉 데이터 셋 탐색하기</h3></summary>
+<details><summary><h3>데이터 셋 탐색하기</h3></summary>
 
 - `datetime` : 자료형이 object임
 
@@ -246,7 +246,7 @@
 - `registered` : `test.csv` 및 `smapleSubmission.csv`에는 존재하지 않음
 </details>
 
-<details><summary><h3>👉 칼럼 재정의하기</h3></summary>
+<details><summary><h3>칼럼 재정의하기</h3></summary>
 
 - `datetime` : 년/월/일/시/요일로 파싱함
 
@@ -266,7 +266,7 @@
 - `day`, `casual`, `registered` : 삭제
 </details>
 
-<details><summary><h3>👉 독립변수 간 다중공선성 줄이기</h3></summary>
+<details><summary><h3>독립변수 간 다중공선성 줄이기</h3></summary>
 
 - 히트맵을 통한 상관계수 확인
 
@@ -299,7 +299,7 @@
 				명목변수 : weather, month, hour, weekday, holiday, workingday
 </details>
 
-<details><summary><h3>👉 실질변수 전처리</h3></summary>
+<details><summary><h3>실질변수 전처리</h3></summary>
 
 - boxplot을 통한 실질변수 분포 탐색
 
@@ -331,7 +331,7 @@
 		- 정규화(minimax scaling) : 값의 크기를 기준으로 최솟값을 0, 최댓값을 1인 분포로 축소하는 작업
 </details>
 
-<details><summary><h3>👉 명목변수 전처리</h3></summary>
+<details><summary><h3>명목변수 전처리</h3></summary>
 
 - 이미 모든 명목변수가 Label Encoding되어 있음
 
@@ -346,7 +346,7 @@
 		- weather : weather_1, weather_2, weather_3, weather_4
 </details>
 
-<details><summary><h3>👉 Pipeline 만들기</h3></summary>
+<details><summary><h3>Pipeline 만들기</h3></summary>
 
 </details>
 
@@ -354,19 +354,19 @@
 
 ## 🚀 MODEL DESIGN
 
-<details><summary><h3>👉 모델 설계</h3></summary>
+<details><summary><h3>모델 설계</h3></summary>
 
 </details>
 
-<details><summary><h3>👉 모델 선정</h3></summary>
+<details><summary><h3>모델 선정</h3></summary>
 
 </details>
 
-<details><summary><h3>👉 test.csv 예측</h3></summary>
+<details><summary><h3>test.csv 예측</h3></summary>
 
 </details>
 
-<details><summary><h3>👉 예측 결과 분석</h3></summary>
+<details><summary><h3>예측 결과 분석</h3></summary>
 
 ![다운로드](https://user-images.githubusercontent.com/116495744/200706287-a05d51e0-90e9-4779-bf9b-0e4783a3ecb8.png)
 ![7](https://user-images.githubusercontent.com/116495744/200705859-68d6e437-c27b-408e-8066-ca986611d0f4.png)
@@ -381,12 +381,12 @@
 
 ## :lips: COMMENT
 
-<details><summary><h3>👉 Teacher`s</h3></summary>
+<details><summary><h3>Teacher`s</h3></summary>
 
 > **지금까지 배운 내용들을 총망라했다고 생각합니다. 짧은 시간 안에 다양한 방법으로 데이터를 분석하고, 적합한 모델을 찾기 위해 여러 알고리즘을 적용한 점에서 팀원들 간 협업도와 각각의 몰입도를 느낄 수 있었습니다. 또한 목차를 논리정연하게 정리한 점, 코드를 이해 가능하도록 기술한 점, scoresDF라는 데이터프레임을 생성하여 각 모델의 성능 지표를 한번에 비교할 수 있도록 기획한 점이 인상 깊었습니다.**
 </details>
 
-<details><summary><h3>👉 Students`</h3></summary>
+<details><summary><h3>Students`</h3></summary>
 
 > 데이터 처리 과정부터 머신러닝 모델 설계 및 예측 과정까지 일목요연하게 기술한 점, 짧은 시간 안에 여러 방법을 시도한 점,  모델 선정 과정에서 각각의 성능 지표를 한번에 확인 가능하도록 기획한 점이 인상 갚었습니다.
 
